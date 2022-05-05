@@ -50,11 +50,9 @@ li {
   height: 20px;
 }
 .HeaderNavListItem a:hover{
-  display: block;
   opacity: 0.8;
   cursor: pointer;
 }
-
 
 .EnglishList{
   display: block;
