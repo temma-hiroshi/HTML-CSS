@@ -1,0 +1,322 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body{
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3",
+               "Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+/*  header  */
+
+.Header{
+  padding: 20px 0px;
+}
+.HeaderContainer{
+  height: 40px;
+  margin: 0px 36px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.HeaderLogo__image{
+  height: 20px;
+  width:  185px;
+}
+.HeaderLogo__image:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+.HeaderNavList{
+  display: flex;
+  justify-content: space-between;
+  width: 720px;
+}
+.HeaderNavListItem{
+  text-align: center;
+  height: 20px;
+}
+.HeaderNavListItem a:hover{
+  display: block;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+.EnglishList{
+  display: block;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.JapaneseList{
+  display: block;
+  color: #000000;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+.HeaderNavListItem__button{
+  display: flex;
+  align-items: stretch;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  background-color: #f79214;
+  padding: 0px 20px;
+  border-radius: 38px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.HeaderList__Counselling{
+  display: flex;
+  align-items: center;
+}
+
+
+/*FirstView*/
+
+.FirstView{
+  width:100%;
+  padding-top: 30px;
+  padding-bottom: 28px;
+}
+.FirstView__main_image{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+  object-fit: cover;
+  min-height: 620px;
+}
+.FirstView__main_image_sp{
+  display: none;
+}
+.FirstView__Container{
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 50px;
+}
+.FirstViewContent__title{
+  font-size: 38px;
+  text-align: center;
+  width: 500px;
+}
+.FirstViewContent__images{
+  margin-bottom: 15px;
+}
+.FirstViewContent__images img{
+  margin: 0px 8px 0px 0px;
+}
+.FirstViewContent__images img:first-of-type{
+  padding-bottom: 25px;
+}
+.FirstViewContent__images img:last-of-type{
+  padding-bottom: 25px;
+  margin-right: 0;
+}
+.FirstViewContent__buttons{
+  display: flex;
+}
+.FirstViewContent__buttons a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f79214;
+  border: none;
+  border-radius: 38px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  width: 306px;
+  height: 64px;
+  margin-right: 15px;
+  
+}
+.FirstViewContent__buttons a:last-of-type{
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  color: #000;
+  width: 176px;
+}
+.FirstViewContent__buttons a:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+.FirstViewCaption{
+  color: #a2a2a4;
+  font-size: 12px;
+  margin-top: 50px;
+  opacity: 0.6;
+}
+.FirstViewCaption a{
+ color: #a2a2a4; 
+}
+
+
+/*About*/
+
+.AboutWrapper{
+  background-color: #f79214;
+  padding: 44px 0px;
+}
+.About{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  padding: 0px 50px;
+  margin: 0 auto;
+}
+.About__video{
+  width:50%;
+}
+.About__title{
+  color: #ffffff;
+  margin: 32px;
+}
+.About__title h2{
+  font-size: 38px;
+}
+.About__title p{
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.About__title a{
+  color: #ffffff;
+}
+.About__title img{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 767px){
+  .FirstView__main_image{
+    display: none;
+  }
+  .FirstView__main_image_sp{
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    z-index: -1;
+    object-fit: cover;
+  }
+  .FirstView__Container{
+    margin-top: 55vw;
+    padding: 0 20px;
+  }
+  .FirstViewContent__title{
+    font-size: 25px;
+    margin: 0 auto 15px;
+    width:auto;
+  }
+  .FirstViewContent__images{
+    display: flex;
+    justify-content: space-between;
+  }
+  .FirstViewContent__images img{
+    width: 27.5%;
+  }
+  .FirstViewContent__images img:nth-of-type(2){
+    width: 40%;
+  }
+  
+  .FirstViewContent__buttons a:first-child{
+    width: 100%;
+  }
+  
+  .FirstViewContent__buttons a:last-child{
+    display: none;
+  }
+  
+  .AboutWrapper{
+    padding: 30px 0;
+  }
+  .About{
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .About__video{
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .About__title{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* responsive. About column*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .About{
+    flex-direction: column;
+  }
+  .About__video{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .About__title{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+}
+
+/* responsive HanburgerMenu*/
+
+@media screen and (max-width: 1080px){
+  .HeaderNavList{
+    display: none;
+  }
+  .HeaderNavHamburger{
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .HeaderNavHamburger__line{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 10px;
+  }
+  .HeaderNavHamburger__line:first-child{
+    position: absolute;
+    top: 0%;
+  }
+  .HeaderNavHamburger__line:last-child{
+  position: absolute;
+  top: 100%;
+  }
+  .FirstView__main_image{
+    top: 60px;
+  }
+}
